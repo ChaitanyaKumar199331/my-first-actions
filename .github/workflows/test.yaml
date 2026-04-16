@@ -9,8 +9,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: First step
-        run: echo "Hello"
-      - name: Second step
-        run: echo "Ramakrishna"
-  
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: List files
+        run: ls
